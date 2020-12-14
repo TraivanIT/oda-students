@@ -1,0 +1,33 @@
+/*box colors*/
+.red-box {
+  border: 1px red dotted;
+}
+.red-blue {
+  border: 1px blue dotted;
+}
+.red-yellow {
+  border: 1px yellow dotted;
+}
+.red-green {
+  border: 1px green dotted;
+}
+/*container new width*/
+@media (min-width: 1200px) {
+  .container {
+    width: 500px;
+  }
+}
+/*pink_color: #EF6A9F;*/
+/* Customer Bg color*/
+.btn-primary {
+    background-color: #EF6A9F;
+}
+/*---index----*/
+.student-total {
+  width: 250px;
+
+}
+.student-total a {
+  font-size: 20px;
+  text-decoration: none;
+}

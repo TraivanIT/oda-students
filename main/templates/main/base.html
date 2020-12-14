@@ -1,0 +1,75 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <style>
+    @media (min-width: 1200px) {
+      .container {
+        width: 12000px;
+      }
+    }
+    /* Customer Bg color*/
+
+    .btn-secondary {
+        background-color: #EF6A9F;
+        border-color: #EF6A9F;
+    }
+
+    .bg-secondary {
+        background-color: #EF6A9F;
+
+    }
+    .school-item-inner {
+      border-radius: 5px 5px 5px 5px;
+      background-color: #EF6A9F;
+
+      color: white;
+    }
+    .school-item a {
+      text-decoration: none;
+    }
+    </style>
+
+  </head>
+  <body>
+    <header class="d-flex flex-column flex-md-row align-items-center px-5  bg-white border-bottom shadow-sm">
+      <a href="/" class="my-0 me-md-auto">
+        <img src="{% static 'images/logo.png'%}"  height="80">
+      </a>
+      <nav class="my-2 my-md-0 me-md-3">
+        <a class="p-2 text-dark" href="{% url 'students'%}">Students</a>
+        <a class="p-2 text-dark" href="#">School</a>
+        <a class="p-2 text-dark" href="#">Teacher</a>
+        <a class="p-2 text-dark" href="{% url 'books' %}">Books</a>
+        <a class="p-2 text-dark" href="">ODA Kids</a>
+      </nav>
+      <a class="btn btn-secondary" href="https://www.odaopportunitiescambodia.org/copy-of-donate" target="_blank">Donate</a>
+    </header>
+    <main class="container">
+      {% block content%}
+
+      {% endblock %}
+    </main>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

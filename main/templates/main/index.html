@@ -1,0 +1,55 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+
+
+  <div class="student-header px-3 py-5 pt-md-5 pb-md-4  mt-4 mx-auto text-center ">
+    <h1 class="display-6">Opportunities of Development thru Art's Students</h1>
+    <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example.
+      It’s built with default Bootstrap components and utilities with little customization.</p>
+    <div class="bd-highlight  row d-flex justify-content-center mb-5">
+      <div class="card student-total text-center bg-light col-md-3 col-3 col-sm-8 py-2 m-1 ">
+
+          <i class="fas fa-clipboard-list fs-1"></i>
+          <div class="card-body">
+            <h5 class="card-title">Total Students</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="{% url 'student_details' %}" class="btn btn-secondary fs-6">000{{studentTotal}} Students</a>
+        </div>
+      </div><!--end of card-->
+      <div class="card student-total text-center bg-light col-md-3 col-3 col-sm-8 py-2  m-1 ">
+          <i class="fas fa-book-reader fs-1"></i>
+          <div class="card-body">
+            <h5 class="card-title">Studying Students</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-secondary fs-6">000{{activeStudentTotal}} Active Students</a>
+        </div>
+      </div><!--end of card-->
+      <div class="card student-total text-center bg-light col-md-3 col-3 col-sm-8 py-2  m-1 ">
+          <i class="fas fa-user-graduate fs-1"></i>
+          <div class="card-body">
+            <h5 class="card-title">Graduted Students</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-secondary fs-6">000{{gradutedStudentTotal}}Graduted</a>
+        </div>
+      </div><!--end of card-->
+      <div class="card student-total text-center bg-light col-md-3 col-3 col-sm-8 py-2  m-1 ">
+          <i class="fas fa-desktop fs-1"></i>
+          <div class="card-body">
+            <h5 class="card-title">Computer Class</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-secondary fs-6">000{{computerStudentTotal}} Computer Class</a>
+
+        </div>
+      </div><!--end of card-->
+
+    </div><!--end flex-->
+    <small class="bg-warning p-2 fst-italic text-muted">Note: This record just start on 2021 ODA English have been opening nearly 15years !</small>
+
+  </div><!--end of student-header-->
+
+
+
+
+
+{% endblock%}
